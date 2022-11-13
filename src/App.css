@@ -114,11 +114,12 @@
   margin: 0;
 }
 
-#content {
+.content {
   box-sizing: border-box;
   opacity: 1;
+  color: transparent;
 
-  transition: all 1s ease;
+  transition: all 1s ease, color 0s;
 
   font-size: 16pt;
 
@@ -149,6 +150,7 @@ h1 {
   border-bottom-left-radius: 5rem;
 }
 
-.inactive {
-  color: transparent;
+.grid-container>.active-cnt {
+  color: white;
+  transition: color 1s;
 }

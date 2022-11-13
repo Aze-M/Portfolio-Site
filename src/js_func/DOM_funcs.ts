@@ -41,5 +41,12 @@ export function setBorderRad(el: string, brdclasses: Array<string>) {
 export function toggleInactive(el: string) {
 	let element = document.getElementById(el);
 
-	element?.classList.toggle("inactive");
+	element?.classList.remove("active-cnt");
+
+	console.log("Started timer")
+	setTimeout(() => {
+		console.log("timer done")
+		element?.classList.add("active-cnt");
+	}, 1000)
+
 }

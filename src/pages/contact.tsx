@@ -7,7 +7,6 @@ export default class Contact extends React.Component {
         setActive("contact");
         setColorClass("content", "dora");
         setBorderRad("content", ["tl_round"])
-        toggleInactive("content");
     }
 
 
