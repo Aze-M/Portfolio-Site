@@ -5,8 +5,13 @@ import App from './App'
 import './index.css'
 
 const router = createHashRouter([
-	
-
+	{
+		path: "/",
+		element: <App />,
+		children: [{
+			
+		}]
+	}
 ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
