@@ -8,12 +8,13 @@ export default class Home extends React.Component {
         setColorClass("content", "ngray");
         setBorderRad("content", ["bl_round"])
         toggleInactive("content");
+        toggleInactive("fancy");    
     }
 
     render() {
         return (
             <div className="trans" id="homecnt">
-                <h1 className="title">Christian Dirks, <div className="fancy">Web-Dev</div></h1>
+                <h1 className="title">Christian Dirks,</h1><h1 className="fancy-lora font-brush" id="fancy">Web-Dev</h1>
                 <div className="text"></div>
                 <div className="img"></div>
             </div>

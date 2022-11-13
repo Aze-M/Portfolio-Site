@@ -16,7 +16,7 @@ function App() {
 			<div className="grid-container">
 				<nav className="left">
 					<ul className="menu nopm">
-						<li className="button ngray" id="home" onClick={() => { toggleInactive("content"); window.location.href = "/#/home" }}><Link to="/home">Home</Link></li>
+						<li className="button ngray" id="home" onClick={() => { toggleInactive("content"), toggleInactive("fancy"); window.location.href = "/#/home" }}><Link to="/home">Home</Link></li>
 						<li className="button blue" id="design" onClick={() => { toggleInactive("content"); window.location.href = "/#/design" }}><Link to="/design">Design</Link></li>
 						<li className="button lora" id="code" onClick={() => { toggleInactive("content"); window.location.href = "/#/code" }}><Link to="Code">Code</Link></li>
 						<li className="button dora" id="contact" onClick={() => { toggleInactive("content"); window.location.href = "/#/contact" }}><Link to="Contact">Contact</Link></li>
