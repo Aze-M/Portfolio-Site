@@ -30,9 +30,11 @@
 
 .left {
   display: grid;
+
   grid-column: 1 1;
+
   margin: 0;
-  background-color: var(--navgray);
+  background: transparent;
   height: 100vh;
 }
 
@@ -48,18 +50,58 @@
 }
 
 .menu>.button {
-  display: block;
+  display: flex;
 
-  font-size: 18pt;
+  font-size: 20pt;
   height: fit-content;
   text-align: center;
+  vertical-align: middle;
+
+  justify-content: center;
+  align-content: center;
+
+  border-radius: 5rem;
+
+  line-height: 100%;
+  flex-grow: 1;
   
-  transition: all 250ms;
+  transition: flex-grow 1s cubic-bezier(.79,.14,.15,.86), border-radius 1s cubic-bezier(.79,.14,.15,.86);
+
 }
 
-.active {
-  display: block;
-  height: 100%;
+.menu>.button>a {
+
+  color: white;
+  text-decoration: none;
+  margin: auto;
+}
+
+.ngray {
+  background-color: var(--neutralgray);
+}
+
+.blue {
+  background-color: var(--main-blue);
+}
+
+.lora {
+  background-color: var(--main-l-orange);
+}
+
+.dora {
+  background-color: var(--main-d-orange);
+}
+
+.trans {
+  background: transparent;
+}
+
+.menu>.button.active {
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  flex-grow: 2;
+
 }
 
 .right {
@@ -70,4 +112,43 @@
 .nopm {
   padding: 0;
   margin: 0;
+}
+
+#content {
+  box-sizing: border-box;
+  opacity: 1;
+
+  transition: all 1s ease;
+
+  font-size: 16pt;
+
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+h1 {
+  margin-top: 3rem;
+
+  text-align: center;
+  font-size: 3rem;
+}
+
+.fancy {
+  display: inline;
+
+  color: var(--main-l-orange);
+
+  font-family: 'Brush Script MT', 'cursive';
+}
+
+.tl_round {
+  border-top-left-radius: 5rem;
+}
+
+.bl_round {
+  border-bottom-left-radius: 5rem;
+}
+
+.inactive {
+  color: transparent;
 }
