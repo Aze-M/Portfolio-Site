@@ -127,19 +127,34 @@
   border-bottom-right-radius: 5rem;
 }
 
-h1 {
+.title {
+  display: inline-block;
+
+  width: 60%;
+
   margin-top: 3rem;
 
-  text-align: center;
+  text-align: right;
   font-size: 3rem;
 }
 
-.fancy {
-  display: inline;
+.fancy-lora {
+  display: inline;  
+  padding-left: 1rem;
 
-  color: var(--main-l-orange);
+  font-size: 4  rem;
 
+  width: 20%;
+
+  color: transparent;
+}
+
+.font-brush { 
   font-family: 'Brush Script MT', 'cursive';
+}
+
+.fancy-lora.active-cnt {
+  color: var(--main-l-orange);
 }
 
 .tl_round {
@@ -152,5 +167,5 @@ h1 {
 
 .grid-container>.active-cnt {
   color: white;
-  transition: color 1s;
+  transition: color 1s ease;
 }
