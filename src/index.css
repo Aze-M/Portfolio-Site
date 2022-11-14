@@ -34,7 +34,10 @@
   --main-blue: #016fb9;
   --main-l-orange: #ff9505;
   --main-d-orange: #ec4e20;
-  --bg-color: var(--navgray);
+  
+  --cd-purple: purple;
+  --cd-d-red: darkred;
+  --cd-d-green: darkgreen;
 }
 
 body {

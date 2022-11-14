@@ -52,11 +52,12 @@
   align-content: center;
 
   border-radius: 5rem;
+  margin-right: .5rem;
 
   line-height: 100%;
   flex-grow: 1;
   
-  transition: flex-grow 1s cubic-bezier(.79,.14,.15,.86), border-radius 2s cubic-bezier(.79,.14,.15,.86);
+  transition: flex-grow 1s cubic-bezier(.79,.14,.15,.86), border-radius 2s cubic-bezier(.79,.14,.15,.86),margin-right 1s ease-in;
   
   user-select: none;
 }
@@ -93,6 +94,7 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   flex-grow: 2;
+  margin-right: 0;
 
 }
 
@@ -142,6 +144,16 @@
   font-size: 3rem;
 }
 
+.title-center {
+  display: block;
+
+  line-height: 3rem;
+
+  text-align: center;
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
 .fancy-lora {
   display: inline;  
   padding-left: 1rem;
@@ -187,6 +199,15 @@
 }
 
 
+.fancy-blue {
+  color: transparent
+}
+
+.fancy-blue.active-cnt {
+  color: var(--main-blue);
+  transition: color 1s;
+}
+
 .font-brush { 
   font-family: 'Brush Script MT', 'cursive';
 }
@@ -230,6 +251,7 @@
   
   padding-top: 1rem;
   overflow: hidden;
+  filter: blur(1rem);
 }
 
 .text-tl { 
@@ -237,15 +259,19 @@
 
   width: 50%;
   overflow: hidden;
+  filter: blur(1rem);
 }
 
 .text-bt {
   padding-top: 1rem;
+  filter: blur(1rem);
 }
 
 .img {
   border-radius: 5rem;
   opacity: 0;
+  
+  filter: blur(1rem);
 
   margin-bottom: auto;
 
@@ -282,6 +308,70 @@
 
 .center {
   text-align: center;
+}
+
+.colorsel {
+  display: grid;
+
+  height: 10rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.colorsel:nth-child(1) {
+  grid-column: 1 1;
+}
+
+.colorsel:nth-child(2) {
+  grid-column: 2 2;
+}
+
+.colorsel:nth-child(3) {
+  grid-column: 3 3;
+}
+
+.color {
+  border-radius: 2rem;
+  margin: .5rem;
+  border-style: none;
+  opacity: 0;
+
+  background-color: var(--main-l-orange);
+
+  filter: blur(.5rem);
+}
+
+.tgl-me {
+  filter: blur(1rem);
+}
+
+*.active-cnt {
+  opacity: 1;
+  filter: none;
+  transition: all 1s, filter 1.5s;
+}
+
+*.active-cnt.first {
+  transition: all .5s;
+}
+
+*.active-cnt.last {
+  transition: filter 2s;
+}
+
+.color.active-cnt.last {
+  transition: all 2s;
+}
+
+.color.purple.active-cnt {
+  background-color: var(--cd-purple);
+}
+
+.color.dred.active-cnt {
+  background-color: var(--cd-d-red);
+}
+
+.color.dgreen.active-cnt {
+  background-color: var(--cd-d-green);
 }
 
 @media only screen and (max-width: 600) {
