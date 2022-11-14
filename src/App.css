@@ -78,6 +78,10 @@
   cursor: pointer;
 }
 
+.menu>.button.active:hover {
+  cursor: default;
+}
+
 .menu>.button.top {
   margin-top: 0;
   margin-bottom: .5rem;
@@ -93,6 +97,10 @@
   color: white;
   text-decoration: none;
   margin: auto;
+}
+
+.menu>.button>a:hover {
+  cursor: inherit;
 }
 
 .ngray {
@@ -182,7 +190,6 @@
 
 .fancy-lora {
   display: inline;  
-  padding-left: 1rem;
 
   width: 20%;
 
@@ -191,6 +198,8 @@
 
 .fancy-lora.title {
   display: inline-block;
+  padding-left: 1rem;
+
   width: 60%;
   text-align: right;
 }
@@ -202,13 +211,14 @@
 
 .fancy-dora {
   display: inline;  
-  padding-left: 1rem;
 
   color: transparent;
 }
 
 .fancy-dora.title {
   display: inline-block;
+  padding-left: 1rem;
+
   width: 60%;
   text-align: right;
 }
@@ -242,15 +252,6 @@
 
 .font-largest {
   font-size: 3rem;
-}
-
-.font-lora {
-  color: transparent;
-}
-
-.font-lora.active-cnt {
-  color: var(--main-l-orange);
-  transition: color 1s;
 }
 
 .tl_round {
@@ -311,24 +312,6 @@
 .img.active-cnt {
   opacity: 1;
   transition: all 2s ease;
-}
-
-#ws-link {
-  color: transparent;
-}
-
-#ws-link.active-cnt {
-  transition: all 1s;
-  color: white;
-}
-
-.cd-link{
-  color: transparent;
-}
-
-.cd-link.active-cnt {
-  transition: all 1s;
-  color: white;
 }
 
 .list>.entry {

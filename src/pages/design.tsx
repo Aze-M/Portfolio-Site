@@ -19,25 +19,25 @@ export default class Design extends React.Component {
                 <div className="text tgl-me">
                     All the design on this page was thought of and written by me exclusively! <br />
                     <br />
-                    <span className="font-large font-lora tgl-me"> This means I did: </span> <br />
+                    <span className="font-large fancy-lora tgl-me"> This means I did: </span> <br />
                     <ul className="list tgl-me">
                         <li className="entry">Initial design for the look of the website.</li>
                         <li className="entry">Setting up the animations for everything on the page using keyframes and transitions.</li>
-                        <li className="entry">Picking the color palette and writing the JS and CSS that handles the switching of colors.</li>
+                        <li className="entry">Picking the color palette and writing the <span className="fancy-lora tgl-me">JS</span> and <span className="fancy-dora tgl-me">CSS</span> that handles the switching of colors.</li>
                         <li className="entry">Ensuring the classes work for every single sub-element in use on the site.</li>
                     </ul>
                 </div>
                 <div className="text tgl-me">
-                    <span className="font-large font-lora tgl-me"> I also did the design for my main website:</span>
+                    <span className="font-large fancy-lora tgl-me"> I also did the design for my main website:</span>
                     <ul className="list tgl-me">
                         <li className="entry">Navbar design at the top and footer at the bottom.</li>
                         <li className="entry">Fetching data to state, state management, dynamic component rendering from the fetched data.</li>
                         <li className="entry">Mobile design including a mobile only menu.</li>
-                        <li className="entry">Highly reusable class design to make designing the site easier.</li>
+                        <li className="entry">Reusable classes to make adding to the site easier.</li>
                     </ul>
                 </div>
                 <div className="text center tgl-me last">
-                    Currently this site is roughtly <span className="font-lora tgl-me last">33%</span> CSS compared to the <span className="font-lora tgl-me last">66%</span> JS (as TSX) and React part. <br />
+                    Currently this site is roughtly <span className="fancy-dora tgl-me last">33% CSS</span> compared to the <span className="fancy-lora tgl-me last">66% JS (as TSX) and React</span> part. <br />
                 </div>
             </div>
         )
