@@ -37,7 +37,7 @@ export default class Code extends React.Component {
                     With the exception of the image of my lovely face in the home tab, every style change involves some form of JS function.
                 </div>
                 <div className="text center tgl-me last">
-                    All the code for this site can be found <a href="https://github.com/Aze-M/Portfolio-Site" className="cd-link tgl-me">here!</a>
+                    All the code for this site can be found <a href="https://github.com/Aze-M/Portfolio-Site" target="_blank" className="cd-link tgl-me">here!</a>
                 </div>
             </div>
         )
