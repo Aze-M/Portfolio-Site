@@ -13,4 +13,39 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background-color: var(--neutralgray);
+  opacity: 1;
+  background-image: repeating-radial-gradient(transparent 25%, #000000 25%, #000000 75%, transparent 75%, transparent 100%),linear-gradient(45deg, transparent 25%, #000 100%);
+  /* background-image: repeating-radial-gradient(#898989 25%, transparent 25%, transparent 75%, var(--bg-color) 75%, transparent 100%),linear-gradient(45deg, #000 25%, #000 100%); */
+  background-position: 0 0, 10px 10px;
+  background-size: 40px 40px;
+
+  transition: background-color 1s;
+
+  animation-name: bgmove;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+
+  --neutralgray: #353531;
+  --navgray: #4a4a4a;
+  --main-blue: #016fb9;
+  --main-l-orange: #ff9505;
+  --main-d-orange: #ec4e20;
+  --bg-color: var(--navgray);
+}
+
+body {
+  padding: 1rem;
+}
+
+@keyframes bgmove {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100vw 0;
+  }
 }

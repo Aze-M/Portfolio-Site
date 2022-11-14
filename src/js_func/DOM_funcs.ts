@@ -50,3 +50,21 @@ export function toggleInactive(el: string) {
 	}, 1000)
 
 }
+
+export function setBGColor(color: string) {
+	let element = document.getElementById("all")
+
+	if(!element) {return};
+
+	element.style.backgroundColor = `var(${color})`;
+}
+
+export function isActive(el: string) {
+	let element = document.getElementById(el);
+
+	if (element?.classList.contains("active")) {
+		return true
+	}
+
+	return false
+}

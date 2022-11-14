@@ -3,29 +3,19 @@
 
   width: 100vw;
   max-width: 1280px;
-  height: 100vh;
   margin: 0 auto;
   padding: 0;
   
   display: block;
-
-  --neutralgray: #353531;
-  --navgray: #4a4a4a;
-  --main-blue: #016fb9;
-  --main-l-orange: #ff9505;
-  --main-d-orange: #ec4e20;
-}
-
-.app  {
-  grid-column-start: 1;
-  grid-column-end: 2;
 }
 
 .grid-container {
   display: grid;
 
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
+
+  min-height: fit-content;
+  height: calc(100vh - 4rem);
 }
 
 .left {
@@ -35,7 +25,8 @@
 
   margin: 0;
   background: transparent;
-  height: 100vh;
+  
+  height: 100%;
 }
 
 .menu {
@@ -65,8 +56,9 @@
   line-height: 100%;
   flex-grow: 1;
   
-  transition: flex-grow 1s cubic-bezier(.79,.14,.15,.86), border-radius 1s cubic-bezier(.79,.14,.15,.86);
-
+  transition: flex-grow 1s cubic-bezier(.79,.14,.15,.86), border-radius 2s cubic-bezier(.79,.14,.15,.86);
+  
+  user-select: none;
 }
 
 .menu>.button>a {
@@ -119,20 +111,20 @@
   opacity: 1;
   color: transparent;
 
-  transition: all 1s ease, color 0s;
+  transition: all 2s ease, color 0s;
 
   font-size: 16pt;
 
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
+
+  padding: 3rem;
 }
 
 .title {
   display: inline-block;
 
   width: 60%;
-
-  margin-top: 3rem;
 
   text-align: right;
   font-size: 3rem;
@@ -153,7 +145,16 @@
   font-family: 'Brush Script MT', 'cursive';
 }
 
+.font-large {
+  font-size: 18pt;
+}
+
+.font-larger {
+  font-size: 22pt;
+}
+
 .fancy-lora.active-cnt {
+  transition: all 1s;
   color: var(--main-l-orange);
 }
 
@@ -168,4 +169,43 @@
 .grid-container>.active-cnt {
   color: white;
   transition: color 1s ease;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.text-tl { 
+  box-sizing: border-box;
+
+  width: 50%;
+  overflow: hidden;
+}
+
+.text-bt {
+  padding-top: 1rem;
+}
+
+.img {
+  border-radius: 5rem;
+  opacity: 0;
+
+  margin-bottom: auto;
+
+  width: calc(50% - 3rem);
+  height: auto;
+}
+
+.img.active-cnt {
+  opacity: 1;
+  transition: all 2s ease;
+}
+
+#ws-link {
+  color: transparent;
+}
+
+#ws-link.active-cnt {
+  transition: all 1s;
+  color: white;
 }
