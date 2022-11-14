@@ -284,6 +284,7 @@
   width: 50%;
   overflow: hidden;
   filter: blur(1rem);
+  margin-right: 1rem;
 }
 
 .text-bt {

@@ -28,9 +28,9 @@ export default class Contact extends React.Component {
                     If you for some reason need to reach me quickly, simply stating as much in the title of your email will get you that, or alternatively you can mark the e-mail as important.
                 </div>
                 <div className="text tgl-me">
-                    If you'd like to see some more of what I can do code wise, you can also find me on leetcode: <br /> <a href="https://leetcode.com/Aze-M/" className="tgl-me">Aze-M on LeetCode.com</a> <br />
+                    Want to see some more of what I can do code wise? You can also find me on leetcode: <br /> <a href="https://leetcode.com/Aze-M/" className="tgl-me">Aze-M on LeetCode.com</a> <br />
                     <br />
-                    Whenever I'm not actively working on something else, like this site or my main site, I grab a random problem from the site and solve it as a fun challenge. <br />
+                    Whenever I'm not actively working on something else, like this site or my main site, I grab a random problem from the site and solve it as a challenge. <br />
                     <br />
                     Finally, for any kind of casual contact, you can also find me on Twitter: <br /> <a href="https://twitter.com/Aze_EDM" className="tgl-me">Aze-M on Twitter.com</a> <br />
                     <br />
