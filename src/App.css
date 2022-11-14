@@ -1,5 +1,16 @@
+@font-face {
+  font-family: Rubik;
+  src: url(./assets/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(./assets/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: KaushanScript;
+  src: url(./assets/KaushanScript-Regular.ttf);
+}
+
 #root {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
 
   width: 100vw;
   max-width: 1280px;
@@ -51,7 +62,7 @@
   justify-content: center;
   align-content: center;
 
-  border-radius: 5rem;
+  border-radius: 3rem;
   margin-right: .5rem;
   margin-block: .5rem;
 
@@ -128,8 +139,8 @@
 
   font-size: 16pt;
 
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 
   height: 100%;
   padding: 3rem;
@@ -189,8 +200,6 @@
   display: inline;  
   padding-left: 1rem;
 
-  width: 20%;
-
   color: transparent;
 }
 
@@ -216,7 +225,7 @@
 }
 
 .font-brush { 
-  font-family: 'Brush Script MT', 'cursive';
+  font-family: 'KaushanScript', 'cursive';
 }
 
 .font-large {
@@ -241,11 +250,11 @@
 }
 
 .tl_round {
-  border-top-left-radius: 5rem;
+  border-top-left-radius: 3rem;
 }
 
 .bl_round {
-  border-bottom-left-radius: 5rem;
+  border-bottom-left-radius: 3rem;
 }
 
 .grid-container>.active-cnt {
@@ -283,7 +292,7 @@
 }
 
 .img {
-  border-radius: 5rem;
+  border-radius: 3rem;
   opacity: 0;
   
   filter: blur(1rem);
