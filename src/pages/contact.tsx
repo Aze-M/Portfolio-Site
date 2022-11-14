@@ -25,8 +25,6 @@ export default class Contact extends React.Component {
                     Additionally you can find me on LinkedIn: <br />
                     <a href="https://www.linkedin.com/in/christian-dirks-145959209/" className="tgl-me">Christian Dirks on LinkedIn</a> <br />
                     <br />
-                    It may take a few days for me to respond to messages from either as I tend to give them more thought and time. <br />
-                    <br />
                     If you for some reason need to reach me quickly, simply stating as much in the title of your email will get you that, or alternatively you can mark the e-mail as important.
                 </div>
                 <div className="text tgl-me">
