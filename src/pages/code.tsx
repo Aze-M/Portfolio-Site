@@ -9,13 +9,14 @@ export default class Code extends React.Component {
         setBGColor("--main-l-orange");
         setBorderRad("content", ["bl_round", "tl_round"]);
         toggleInactive("content");
+        toggleInactive("cd-link");
     }
 
 
     render() {
         return (
             <div className="trans">
-                This is a test for routing Code
+                All the code for this site can be found <a href="https://github.com/Aze-M/Portfolio-Site" className="cd-link" id="cd-link">here!</a>
             </div>
         )
     }

@@ -21,9 +21,9 @@ export default class Home extends React.Component {
                 <h1 className="title">Christian Dirks,</h1><h1 className="fancy-lora font-brush" id="fancy">Web-Dev</h1>
                 <div className="text-tl inline">
                     <span className="font-brush font-larger">Hello</span>, I am Christian Dirks <br />
-                    As of this year I've begun switching from tech-support, to tech-create. <br />
+                    As of 2022 I've begun switching from tech-support, to tech-create. <br />
                     <br />
-                    Having previous experience in Programming making plugins for older games in lue API's I have now made two sites with React and JS <br />
+                    Having previous experience in Programming making plugins for older games in lua API's, I have now made two sites with React and JS <br />
                     <br />
                     My main site can be found <a href="https://aze-m.com" id="ws-link" target="_blank">here</a> which has a private codebase, as well as implementation of a few express.js backends which are closed off to outside requests. <br />
                 </div>

@@ -22,7 +22,7 @@ function App() {
 						<li className="button dora" id="contact" onClick={() => { window.location.href = "/#/contact" }}><Link to="Contact">Contact</Link></li>
 					</ul>
 				</nav>
-				<div className="content right nopm inactive" id="content">
+				<div className="content right nopm" id="content">
 					<Outlet></Outlet>
 				</div>
 			</div>
