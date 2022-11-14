@@ -18,15 +18,15 @@ export default class Code extends React.Component {
             <div className="trans">
                 <h1 className="title-center font-brush font-largest fancy-dora inline tgl-me first">Coded</h1><span className="title-center fancy-blue inline tgl-me first"> in Typescript for Javascript</span>
                 <div className="text tgl-me">
-                    In addition to using the react-router-dom package, as well as vite to set up dev server and the baasic codebase, <br />
-                    a few vanilla JS functions have been written (also in Typescript) to handle the DOM manipulation. <br />
+                    In addition to using the react-router-dom package, as well as vite to set up dev server and the basic codebase, <br />
+                    a few vanilla JS (also in Typescript) functions have been written to handle the DOM manipulation. <br />
                     <br />
-                    The use of React to make this just made making a lot of transitions on the page easier, as the base HTML never changes this also lets the background animation simply keep flowing, and the background change smoothly. <br />
+                    The use of React to make this just made making a lot of transitions on the page easier, as the base HTML never changes this also lets the background animation simply keep flowing and change color smoothly. <br />
                     <br />
                     The <span className="fancy-blue tgl-me">componentDidMount()</span> function handles all of the class adding that results in CSS morphing the website from page to page. <br />
                     <br />
                 </div>
-                <div className="center tgl-me">Why not try a few more background colors?</div>
+                <div className="center tgl-me">Why not try a few more animated background colors?</div>
                 <div className="colorsel tgl-me">
                     <button className="color purple tgl-me last" onClick={() => setBGColor("--cd-purple")}></button>
                     <button className="color dred tgl-me last" onClick={() => setBGColor("--cd-d-red")}></button>
