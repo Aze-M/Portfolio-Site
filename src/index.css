@@ -21,7 +21,6 @@
   background-size: 40px 40px;
 
   transition: background-color 2s cubic-bezier(.79,.14,.15,.86);
-  will-change: background-color background-position;
 
   animation-name: bgmove;
   animation-duration: 60s;
