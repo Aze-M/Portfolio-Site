@@ -158,8 +158,6 @@
   display: inline;  
   padding-left: 1rem;
 
-  font-size: 4rem;
-
   width: 20%;
 
   color: transparent;
@@ -179,8 +177,6 @@
 .fancy-dora {
   display: inline;  
   padding-left: 1rem;
-
-  font-size: 4rem;
 
   width: 20%;
 
@@ -220,6 +216,10 @@
   font-size: 22pt;
 }
 
+.font-largest {
+  font-size: 4rem;
+}
+
 .font-lora {
   color: transparent;
 }
@@ -252,6 +252,10 @@
   padding-top: 1rem;
   overflow: hidden;
   filter: blur(1rem);
+}
+
+.text>a {
+  color: white;
 }
 
 .text-tl { 

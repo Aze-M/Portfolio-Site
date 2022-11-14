@@ -16,14 +16,14 @@ export default class Code extends React.Component {
     render() {
         return (
             <div className="trans">
-                <h1 className="title-center font-brush fancy-dora inline tgl-me first">Coded</h1><span className="title-center fancy-blue inline tgl-me first"> in Typescript for Javascript</span>
+                <h1 className="title-center font-brush font-largest fancy-dora inline tgl-me first">Coded</h1><span className="title-center fancy-blue inline tgl-me first"> in Typescript for Javascript</span>
                 <div className="text tgl-me">
                     In addition to using the react-router-dom package, as well as vite to set up dev server and the baasic codebase, <br />
                     a few vanilla JS functions have been written (also in Typescript) to handle the DOM manipulation. <br />
                     <br />
                     The Use of React to make this just made making a lot of transitions on the page easier, as the base HTML never changes this also lets the backgroudn animation simply keep flowing, and the background change smoothly. <br />
                     <br />
-                    The componentDidMount function handles all of the class adding that results in the css morphing the website from page to page. <br />
+                    The <span className="fancy-blue tgl-me">componentDidMount()</span> function handles all of the class adding that results in the css morphing the website from page to page. <br />
                     <br />
                 </div>
                 <div className="center tgl-me">Why not try a few more background colors?</div>
@@ -34,7 +34,7 @@ export default class Code extends React.Component {
                 </div>
                 <div className="text tgl-me last">
                     <br />
-                    With the exception of the image of my lovely face on the home page, every style change involves some form of JS function.
+                    With the exception of the image of my lovely face in the home tab, every style change involves some form of JS function.
                 </div>
                 <div className="text center tgl-me last">
                     All the code for this site can be found <a href="https://github.com/Aze-M/Portfolio-Site" className="cd-link tgl-me">here!</a>

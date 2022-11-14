@@ -15,7 +15,7 @@ export default class Design extends React.Component {
     render() {
         return (
             <div className="trans">
-                <span className="fancy-dora font-brush title tgl-me" id="fancy-dora">Design and CSS</span> <h1 className="title-right inline tgl-me">by me!</h1>
+                <span className="fancy-dora font-brush font-largest title tgl-me" id="fancy-dora">Design and CSS</span> <h1 className="title-right inline tgl-me">by me!</h1>
                 <div className="text tgl-me">
                     All the design on thsi page was thought of and written by me exclusively; <br />
                     <br />
