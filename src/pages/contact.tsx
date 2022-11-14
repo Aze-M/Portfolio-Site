@@ -7,7 +7,7 @@ export default class Contact extends React.Component {
         setActive("contact");
         setColorClass("content", "dora");
         setBGColor("--main-d-orange");
-        setBorderRad("content", ["tl_round"]);
+        setBorderRad("content", ["tl_round","bl_round"]);
         toggleInactive("content");
         toggleInactiveClass("tgl-me")
     }
