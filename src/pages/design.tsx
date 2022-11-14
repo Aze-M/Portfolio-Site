@@ -28,9 +28,7 @@ export default class Design extends React.Component {
                     </ul>
                 </div>
                 <div className="text tgl-me">
-                    I also did the design for my main website! <br />
-                    <br />
-                    <span className="font-large font-lora tgl-me">This adds a few more things:</span>
+                    <span className="font-large font-lora tgl-me"> I also did the design for my main website:</span>
                     <ul className="list tgl-me">
                         <li className="entry">Navbar design at the top and footer at the bottom.</li>
                         <li className="entry">Fetching data to state, state management, dynamic component rendering from the fetched data.</li>
