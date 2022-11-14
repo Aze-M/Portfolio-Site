@@ -74,6 +74,10 @@
   user-select: none;
 }
 
+.menu>.button:hover {
+  cursor: pointer;
+}
+
 .menu>.button.top {
   margin-top: 0;
   margin-bottom: .5rem;
@@ -363,6 +367,10 @@
   background-color: var(--main-l-orange);
 
   filter: blur(.5rem);
+}
+
+.color:hover {
+  cursor: pointer;
 }
 
 .tgl-me {
