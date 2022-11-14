@@ -16,18 +16,18 @@
 
   background-color: var(--neutralgray);
   opacity: 1;
-  background-image: repeating-radial-gradient(transparent 25%, #000000 25%, #000000 75%, transparent 75%, transparent 100%),linear-gradient(45deg, transparent 25%, #000 100%);
-  /* background-image: repeating-radial-gradient(#898989 25%, transparent 25%, transparent 75%, var(--bg-color) 75%, transparent 100%),linear-gradient(45deg, #000 25%, #000 100%); */
-  background-position: 0 0, 10px 10px;
+  background-image: repeating-radial-gradient(#000000 5%, #000000 75%, transparent 75%, transparent 100%),linear-gradient(45deg, transparent 25%, #000 100%);
+  /* background-image: repeating-radial-gradient(transparent 25%, #000000 25%, #000000 75%, transparent 75%, transparent 100%),linear-gradient(45deg, transparent 25%, #000 100%); */
   background-size: 40px 40px;
 
   transition: background-color 2s cubic-bezier(.79,.14,.15,.86);
+  will-change: background-color background-position;
 
   animation-name: bgmove;
-  animation-duration: 120s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
-  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(.65,.05,.36,1);
 
   --neutralgray: #353531;
   --navgray: #4a4a4a;
@@ -42,10 +42,13 @@ body {
 }
 
 @keyframes bgmove {
-  from {
+  0% {
     background-position: 0 0;
   }
-  to {
-    background-position: 100vw 0;
+  50% {
+    background-position: 20vw 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }

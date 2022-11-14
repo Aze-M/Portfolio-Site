@@ -35,7 +35,8 @@ export default class Home extends React.Component {
                     <br /> 
                     The design of the site was also completely done by me. While I don't think it's going to win any awards I wanted something colorful and interesting,  <br /> 
                     as well as something that let me flex a bit of my ideas and skills.   <br /> 
-                    <br /> 
+                </div>
+                <div className="text center">
                     At any rate it will stand as a reflection of my abilities and it was a fun project to work on for the days it took to get it right.
                 </div>
             </div>

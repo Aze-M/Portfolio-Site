@@ -22,14 +22,14 @@ export default class Design extends React.Component {
                     <br />
                     <span className="font-large font-lora"> This means I did: </span> <br />
                     <ul className="list">
-                        <li className="entry">Initial design for the look of the site.</li>
+                        <li className="entry">Initial design for the look of the website.</li>
                         <li className="entry">Setting up the Animations for everything on the page using keyframes and transitions.</li>
                         <li className="entry">Picking the color palette and writing the JS and CSS that handles the switching of colors.</li>
                         <li className="entry">Ensuring the classes work for every single sub-element in use on the site.</li>
                     </ul>
                 </div>
                 <div className="text">
-                    I also did the design for the main site <br />
+                    I also did the design for the main website; <br />
                     <br />
                     <span className="font-large font-lora">This adds:</span>
                     <ul className="list">
@@ -39,8 +39,8 @@ export default class Design extends React.Component {
                         <li className="entry">Highly reusable class design to make designing the site easier.</li>
                     </ul>
                 </div>
-                <div className="text">
-                    Currently this site is roughtly <span className="font-lora">33%</span> css compared to the <span className="font-lora">66%</span> JS (as TSX) and React part. <br />
+                <div className="text center">
+                    Currently this site is roughtly <span className="font-lora">33%</span> CSS compared to the <span className="font-lora">66%</span> JS (as TSX) and React part. <br />
                 </div>
             </div>
         )

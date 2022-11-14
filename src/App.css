@@ -280,6 +280,10 @@
   padding-block: .25rem;
 }
 
+.center {
+  text-align: center;
+}
+
 @media only screen and (max-width: 600) {
   content> * {
     display: block;
