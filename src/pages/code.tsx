@@ -38,7 +38,7 @@ export default class Code extends React.Component {
                 </div>
                 <div className="text center font-larger tgl-me last">
                     <br></br>
-                    All the code for this site can be found <a href="https://github.com/Aze-M/Portfolio-Site" target="_blank" className="cd-link fancy-blue tgl-me">here!</a>
+                    All the code for this site and misc projects can be found <a href="https://github.com/Aze-M/" target="_blank" className="cd-link fancy-blue tgl-me">here!</a>
                 </div>
             </div>
         )
